@@ -1,0 +1,11 @@
+1) 
+As aplicações baseadas em internet foram desenvolvidas principalmente para permitir acesso de qualquer lugar, sem necessidade de instalação no computador do usuário.
+Elas facilitam a atualização do sistema,já que as mudanças são feitas no servidor e passam a valer para todos. Também reduzem custos de manutenção, permitem atender muitos usuários ao mesmo tempo e facilitam a integração com outros sistemas.
+
+2)
+Um servidor de aplicação é responsável por executar a lógica do sistema. Ele recebe as requisições feitas pelos usuários, processa as regras de negócio, acessa o banco de dados,
+controla autenticação e permissões e envia a resposta de volta ao cliente. Ele funciona como intermediário entre o usuário e o banco de dados.
+
+3)
+O frontend é a parte visual do sistema, ou seja, tudo o que o usuário vê e utiliza no navegador, como telas, botões e formulários. Já o backend é a parte interna,
+que processa as informações, aplica as regras de negócio, acessa o banco de dados e gera as respostas que serão exibidas no frontend
