@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+header {
+  background-color: #ffbb98;
+  color: #344648;
+  padding: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #7d8e95;
+  color: #fbe0c3;
+}
+nav a {
+  color: #344648;
+  text-decoration: none;
+  margin-right: 15px;
+}
