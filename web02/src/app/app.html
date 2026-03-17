@@ -1,0 +1,58 @@
+<header>
+  <img src="gif.gif">
+<h1>RoupasTec</h1>
+<nav>
+    <a href="https://youtu.be/dQw4w9WgXcQ">Clique aqui |</a>
+    <a routerLink="cesta" class="carrinho" (click)="mensagem()">🛒carrinho </a>
+    <a routerLink="login" class="login">login </a>
+    <a routerLink="cadastro" class="cadastro">cadastro </a>
+</nav>
+</header>
+<div id="corpo">
+    <ol>
+      <li>Infantil</li>
+      <li>Masculino</li>
+      <li>Feminino</li>
+    </ol>
+<router-outlet></router-outlet>
+</div>
+<footer>
+    <p align="center">
+      Essa é a loja de roupas da fatec
+      ipiranga, loja referente a 3° aula da aula de programação web
+      </p>
+
+      <div class="produtos">
+        
+        <div class="card-produto">
+          <img src="palmeiras.jpg">
+          <p align="center">
+            Camisa do maior time do brasil
+          </p>
+        </div>  
+
+        <div class="card-produto">
+          <img src="calca.jpg">
+          <p align="center">
+            calça angelical para subir capa nos noob
+          </p>
+        </div>  
+
+        <div class="card-produto">
+          <img src="bone.jpg">
+          <p align="center">
+            Bone do GOAT Kiko
+          </p>
+        </div>  
+
+      </div>
+ 
+      <h3>Telefones:</h3>
+      <table border="1" align="center" width="50%" >
+          <tr><td>Reclame aqui </td><td>9424-2344</td></tr>
+          <tr><td>Vendas</td><td>9823-2344</td></tr>
+          <tr><td>Estoque</td><td>9344-2344</td></tr>
+          <tr><td>Compras</td><td>9845-2344</td></tr>
+      </table>
+   
+</footer>
