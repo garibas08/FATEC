@@ -1,0 +1,25 @@
+<h2>Cadastro</h2>
+
+<form>
+
+<label>Email</label>
+<br>
+<input type="email" name="email" [(ngModel)]="email">
+
+<br><br>
+
+<label>Senha</label>
+<br>
+<input type="password" name="senha" [(ngModel)]="senha">
+
+<br><br>
+
+<label>Confirmar senha</label>
+<br>
+<input type="password" name="confirmarSenha" [(ngModel)]="confirmarSenha">
+
+<br><br>
+
+<button type="button" (click)="cadastrar()">Cadastrar</button>
+
+</form>
