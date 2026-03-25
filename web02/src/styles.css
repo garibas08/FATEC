@@ -1,17 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
-header {
-  background-color: #ffbb98;
-  color: #344648;
-  padding: 20px;
+/* Global styles */
+:root {
+  --rt-bg: #f4ede4;
+  --rt-surface: rgba(255, 255, 255, 0.78);
+  --rt-surface-strong: #fffaf4;
+  --rt-primary: #7c4f35;
+  --rt-primary-dark: #563224;
+  --rt-secondary: #d6a878;
+  --rt-accent: #264653;
+  --rt-text: #2d2320;
+  --rt-muted: #6e625c;
+  --rt-border: rgba(124, 79, 53, 0.14);
+  --rt-shadow: 0 24px 60px rgba(56, 36, 29, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #7d8e95;
-  color: #fbe0c3;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  color: var(--rt-text);
+  background:
+    radial-gradient(circle at top left, rgba(214, 168, 120, 0.45), transparent 28%),
+    radial-gradient(circle at top right, rgba(38, 70, 83, 0.16), transparent 24%),
+    linear-gradient(135deg, #f7f1ea 0%, #efe1d1 42%, #f8f4ef 100%);
 }
-nav a {
-  color: #344648;
+
+a {
   text-decoration: none;
-  margin-right: 15px;
+}
+
+.glass-panel {
+  background: var(--rt-surface);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--rt-shadow);
+}
+
+.section-card {
+  background: var(--rt-surface-strong);
+  border: 1px solid var(--rt-border);
+  box-shadow: 0 16px 40px rgba(87, 60, 48, 0.08);
+}
+
+.brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(124, 79, 53, 0.08);
+  color: var(--rt-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.rt-btn-primary {
+  background: linear-gradient(135deg, var(--rt-primary) 0%, #a26745 100%);
+  color: #fff;
+  border: none;
+}
+
+.rt-btn-primary:hover,
+.rt-btn-primary:focus {
+  background: linear-gradient(135deg, var(--rt-primary-dark) 0%, #8c583c 100%);
+  color: #fff;
+}
+
+.rt-btn-outline {
+  border: 1px solid rgba(124, 79, 53, 0.28);
+  color: var(--rt-primary);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.rt-btn-outline:hover,
+.rt-btn-outline:focus {
+  background: rgba(124, 79, 53, 0.08);
+  color: var(--rt-primary-dark);
+}
+
+.auth-shell {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.form-control,
+.form-select {
+  border-radius: 1rem;
+  border-color: rgba(124, 79, 53, 0.18);
+  padding: 0.85rem 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(124, 79, 53, 0.45);
+  box-shadow: 0 0 0 0.25rem rgba(124, 79, 53, 0.14);
+}
+
+.page-title {
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.muted-copy {
+  color: var(--rt-muted);
 }
