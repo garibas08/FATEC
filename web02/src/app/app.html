@@ -1,58 +1,150 @@
-<header>
-  <img src="gif.gif">
-<h1>RoupasTec</h1>
-<nav>
-    <a href="https://youtu.be/dQw4w9WgXcQ">Clique aqui |</a>
-    <a routerLink="cesta" class="carrinho" (click)="mensagem()">🛒carrinho </a>
-    <a routerLink="login" class="login">login </a>
-    <a routerLink="cadastro" class="cadastro">cadastro </a>
-</nav>
-</header>
-<div id="corpo">
-    <ol>
-      <li>Infantil</li>
-      <li>Masculino</li>
-      <li>Feminino</li>
-    </ol>
-<router-outlet></router-outlet>
-</div>
-<footer>
-    <p align="center">
-      Essa é a loja de roupas da fatec
-      ipiranga, loja referente a 3° aula da aula de programação web
-      </p>
-
-      <div class="produtos">
-        
-        <div class="card-produto">
-          <img src="palmeiras.jpg">
-          <p align="center">
-            Camisa do maior time do brasil
-          </p>
-        </div>  
-
-        <div class="card-produto">
-          <img src="calca.jpg">
-          <p align="center">
-            calça angelical para subir capa nos noob
-          </p>
-        </div>  
-
-        <div class="card-produto">
-          <img src="bone.jpg">
-          <p align="center">
-            Bone do GOAT Kiko
-          </p>
-        </div>  
-
+<div class="container py-4 py-lg-5">
+  <header class="glass-panel rounded-5 px-4 px-lg-5 py-3 mb-4">
+    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-4">
+      <div class="d-flex align-items-center gap-3">
+        <img src="gif.gif" alt="Logo RoupasTec" class="brand-logo rounded-4">
+        <div>
+          <span class="brand-pill mb-2">Moda com identidade</span>
+          <h1 class="h2 mb-1 fw-bold">RoupasTec</h1>
+          <p class="mb-0 muted-copy">Colecao casual com visual mais atual e experiencia mais organizada.</p>
+        </div>
       </div>
- 
-      <h3>Telefones:</h3>
-      <table border="1" align="center" width="50%" >
-          <tr><td>Reclame aqui </td><td>9424-2344</td></tr>
-          <tr><td>Vendas</td><td>9823-2344</td></tr>
-          <tr><td>Estoque</td><td>9344-2344</td></tr>
-          <tr><td>Compras</td><td>9845-2344</td></tr>
-      </table>
-   
-</footer>
+
+      <nav class="ms-lg-auto d-flex flex-wrap gap-2">
+        <a
+          href="https://youtu.be/dQw4w9WgXcQ"
+          target="_blank"
+          rel="noreferrer"
+          class="btn rt-btn-outline rounded-pill px-4"
+        >
+          Destaque surpresa
+        </a>
+        <a routerLink="login" class="btn rt-btn-outline rounded-pill px-4">Login</a>
+        <a routerLink="cadastro" class="btn rt-btn-outline rounded-pill px-4">Cadastro</a>
+        <a routerLink="cesta" class="btn rt-btn-primary rounded-pill px-4" (click)="mensagem()">
+          Carrinho
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="d-grid gap-4">
+    <section class="row g-4 align-items-stretch">
+      <div class="col-xl-7">
+        <div class="section-card rounded-5 p-4 p-lg-5 h-100">
+          <span class="brand-pill mb-3">Nova vitrine</span>
+          <h2 class="page-title fw-bold mb-3">Estilo para infantil, masculino e feminino em um so lugar.</h2>
+          <p class="lead muted-copy mb-4">
+            Reformulamos a loja com Bootstrap para criar uma navegacao mais bonita, responsiva e pronta para crescer.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-4">
+              <div class="category-card rounded-4 p-3 h-100">
+                <span class="small text-uppercase fw-semibold">01</span>
+                <h3 class="h5 mt-2">Infantil</h3>
+                <p class="mb-0 muted-copy">Pecas leves, confortaveis e cheias de personalidade.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="category-card rounded-4 p-3 h-100">
+                <span class="small text-uppercase fw-semibold">02</span>
+                <h3 class="h5 mt-2">Masculino</h3>
+                <p class="mb-0 muted-copy">Modelos versateis para rotina, estudo e fim de semana.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="category-card rounded-4 p-3 h-100">
+                <span class="small text-uppercase fw-semibold">03</span>
+                <h3 class="h5 mt-2">Feminino</h3>
+                <p class="mb-0 muted-copy">Silhuetas modernas com toque urbano e elegante.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a routerLink="cadastro" class="btn rt-btn-primary btn-lg rounded-pill px-4">Criar conta</a>
+            <a routerLink="cesta" class="btn rt-btn-outline btn-lg rounded-pill px-4">Ver cesta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-5">
+        <div class="section-card rounded-5 p-4 p-lg-5 h-100">
+          <div class="d-flex justify-content-between align-items-start mb-4">
+            <div>
+              <span class="brand-pill mb-3">Selecao especial</span>
+              <h2 class="h3 fw-bold mb-2">Produtos em destaque</h2>
+            </div>
+            <span class="badge text-bg-light border text-dark rounded-pill px-3 py-2">Curadoria Fatec</span>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="product-card rounded-4 overflow-hidden">
+                <img src="palmeiras.jpg" alt="Camisa em destaque" class="product-image">
+                <div class="p-3">
+                  <h3 class="h5 mb-1">Camisa premium</h3>
+                  <p class="mb-0 muted-copy">Uma peca esportiva com visual marcante para a vitrine principal.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="product-card rounded-4 overflow-hidden h-100">
+                <img src="calca.jpg" alt="Calca em destaque" class="product-image">
+                <div class="p-3">
+                  <h3 class="h6 mb-1">Calca urbana</h3>
+                  <p class="mb-0 muted-copy">Conforto e estilo em um visual mais sofisticado.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="product-card rounded-4 overflow-hidden h-100">
+                <img src="bone.jpg" alt="Bone em destaque" class="product-image">
+                <div class="p-3">
+                  <h3 class="h6 mb-1">Bone casual</h3>
+                  <p class="mb-0 muted-copy">Acessorio para completar a composicao da colecao.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card rounded-5 p-3 p-lg-4">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+
+  <footer class="section-card rounded-5 mt-4 p-4 p-lg-5">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-6">
+        <span class="brand-pill mb-3">Sobre a loja</span>
+        <h2 class="h3 fw-bold mb-3">Loja de roupas da Fatec Ipiranga</h2>
+        <p class="muted-copy mb-0">
+          Projeto com foco em uma experiencia visual mais agradavel, moderna e organizada para a disciplina de Programacao Web.
+        </p>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="table-responsive">
+          <table class="table align-middle mb-0 contact-table">
+            <thead>
+              <tr>
+                <th>Setor</th>
+                <th>Telefone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Reclame aqui</td><td>9424-2344</td></tr>
+              <tr><td>Vendas</td><td>9823-2344</td></tr>
+              <tr><td>Estoque</td><td>9344-2344</td></tr>
+              <tr><td>Compras</td><td>9845-2344</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

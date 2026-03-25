@@ -1,14 +1,5 @@
-form{
-    width:300px;
-    margin:auto;
-}
-
-input{
-    width:100%;
-    padding:8px;
-}
-
-button{
-    width:106%;
-    padding:12px;
+.login-box {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 240, 231, 0.95));
+  border: 1px solid rgba(124, 79, 53, 0.14);
+  box-shadow: 0 20px 45px rgba(79, 53, 43, 0.12);
 }
